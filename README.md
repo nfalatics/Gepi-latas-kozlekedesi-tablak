@@ -21,8 +21,6 @@ M = cv2.matchTemplate(I, T, cv2.TM_CCOEFF)
 cv2.circle(I, (maxloc[0] + T.shape[1] // 2, maxloc[1] + T.shape[0] // 2), 90, (0, 255, 0), 3)
 
 plt.figure()
-plt.axis("off")
-plt.colorbar()
 plt.plot()
 plt.title("Behajtanitilos")
 plt.imshow(I[:, :, ::-1])
