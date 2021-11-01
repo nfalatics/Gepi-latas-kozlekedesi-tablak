@@ -10,10 +10,6 @@ I = cv2.imread("/home/noemi/behajtani-tilos-rendor.jpg")
 # A keresett első minta
 T = cv2.imread("/home/noemi/behajtanitilos.png")
 
-print("A minta mérete: ", T.shape)
-print("A kép mérete: ", I.shape)
-
-
 M = cv2.matchTemplate(I, T, cv2.TM_CCOEFF)
 (_, _, _, maxloc) = cv2.minMaxLoc(M)
 
